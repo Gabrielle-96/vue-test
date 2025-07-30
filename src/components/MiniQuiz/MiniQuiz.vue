@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps, defineExpose } from 'vue'
+import { ref } from 'vue'
 import { questions as defaultQuestions, type Question } from './questions'
 
 const props = defineProps<{
@@ -89,12 +89,12 @@ function restart() {
 <style scoped>
 .quiz-game {
   position: relative;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-align: center;
   background: transparent;
   color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .quiz-game h3 {
