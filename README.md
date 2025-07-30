@@ -45,11 +45,11 @@ src/
   main.ts         # Ponto de entrada da aplicação
 ```
 
-🧩 Componentes
+## 🧩 Componentes
   - ToDoList — Lista de tarefas interativa, com testes cobrindo adição, remoção e marcação de tarefas.
   - MiniQuiz — Quiz de perguntas e respostas, com lógica de pontuação e testes de fluxo.
 
-🕵️‍♀️ Testes
+## 🕵️‍♀️ Testes
 
  - Testes escritos em TypeScript usando Vitest.
  - Cobertura de cenários positivos e negativos.
