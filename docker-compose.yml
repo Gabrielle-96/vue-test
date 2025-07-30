@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  testevue:
+    container_name: vue-test
+    image: node:20.11.1-alpine
+    volumes:
+      - ./:/src/app
+    environment:
+      - WDS_SOCKET_HOST=127.0.0.1
+    ports:
+      - 5173:5173
+    working_dir: /src/app
+    command: sh -c "npm install && npm run dev"
+    networks:
+      - local
+
+networks:
+  local:
+    name: local
